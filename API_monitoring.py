@@ -65,7 +65,7 @@ def check_status():
             print("already in the list")
 
             if dateparser.parse(item["last_claim_time"]).date() < (
-                    datetime.datetime.now().date() - datetime.timedelta(days=2)):
+                    datetime.datetime.now().date() - datetime.timedelta(days=1)):
                 subject_new = "The last claim time "
                 message_new = "The last claim of " + str(item["owner"]) + " is " + str(
                     dateparser.parse(item["last_claim_time"]))
