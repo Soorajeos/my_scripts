@@ -35,7 +35,7 @@ headers = {
     'Content-Type': 'application/json',
 }
 
-data = '{"limit" : "100", "json" : true}'
+data = '{"limit" : "21", "json" : true}'
 url = 'https://api.eosdublin.io/v1/chain/get_producers'     # url comes here
 
 response = requests.post(url=url, headers=headers, data=data)
