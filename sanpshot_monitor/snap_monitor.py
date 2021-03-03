@@ -34,7 +34,7 @@ response = requests.get(url=url)
 text_data = response.text
 kill_trigger = 0
 while bool(response) is not True:
-    sleep(5)
+    sleep(1800)
     # print("request error ")
     response = requests.get(url=url)
     text_data = response.text
