@@ -8,9 +8,9 @@ from email.message import EmailMessage
 def send_email(subject, message):
     msg = EmailMessage()
 
-    my_address = "sooraj@eosdublin.com"  # sender's
+    my_address = "EMAIL"  # sender's
 
-    app_generated_password = "uovonmgkakajhaqp"  # Not password of gmail(app password)
+    app_generated_password = "APP PASSWORD"  # Not password of gmail(app password)
 
     msg["Subject"] = subject
 
