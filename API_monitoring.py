@@ -43,7 +43,7 @@ response = requests.post(url=url, headers=headers, data=data)
 kill_trigger = 0
 while bool(response) is not True:
     print("ERROR OCCURED.....")
-    if kill_trigger == 6:
+    if kill_trigger >= 5:
         kill_subject = "Api seems to be down"
         kill_message = "The program has been aborted. Api Node seems to be down  "
         send_email(kill_subject, kill_message)
