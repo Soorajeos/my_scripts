@@ -38,7 +38,7 @@ while bool(response) is not True:
     # print("request error ")
     response = requests.get(url=url)
     text_data = response.text
-    if kill_trigger >= 5:
+    if kill_trigger > 4:
         kill_subject = "REQUEST ERROR"
         kill_message = "The snapshot server seems to be down. Please check the server"
         # send email
