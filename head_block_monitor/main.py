@@ -4,8 +4,8 @@ from time import sleep
 import smtplib
 from email.message import EmailMessage
 
-telegram_token = "1539694150:AAHqExjdXP_P9_yYMxJBlc6mG5LkyCkPnlE"
-chat_id = "-1001264934506"
+telegram_token = "Telegram Api"
+chat_id = "Telegram Chat Id"
 
 
 def send_email(subject, message):
@@ -13,7 +13,7 @@ def send_email(subject, message):
 
     my_address = "sooraj@eosdublin.com" # sender's
 
-    app_generated_password = "uovonmgkakajhaqp"  # Not password of gmail(app password)
+    app_generated_password = "App password"  # Not password of gmail(app password)
 
     msg["Subject"] = subject
 
