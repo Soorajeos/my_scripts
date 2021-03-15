@@ -57,7 +57,7 @@ while bool(response) is False:
 head_block_time = response.json()["head_block_time"]
 
 formatted_head_block_time = " ".join(head_block_time.split("T"))
-checking_time = datetime.datetime.utcnow() - datetime.timedelta(minutes=30)
+checking_time = datetime.datetime.utcnow() - datetime.timedelta(minutes=5)
 head_time_obj = datetime.datetime.strptime(formatted_head_block_time, '%Y-%m-%d %H:%M:%S.%f')
 
 if checking_time > head_time_obj:
