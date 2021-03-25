@@ -42,9 +42,13 @@ try:
     expiration_data = response.json()["expiration"]
     renewal_status = response.json()["status"]
 
-    if renewal_status != "OK":
+    if renewal_status == "OK":
         message = "The domain is renewed till " + expiration_data
         telegram_alert(telegram_token, chat_id, message=message)
+    else:
+        msg = "something went wrong. Status : " + renewal_status
+        telegram_alert(telegram_token, chat_id, message=msg)
 except :
-    kill_msg = "The domain is not registered"
+    kill_msg = "The domain is not registered. Please check."
     telegram_alert(telegram_token, chat_id, message=kill_msg)
+    
