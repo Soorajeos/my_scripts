@@ -45,6 +45,6 @@ try:
     if renewal_status != "OK":
         message = "The domain is renewed till " + expiration_data
         telegram_alert(telegram_token, chat_id, message=message)
-except KeyError as k:
+except :
     kill_msg = "The domain is not registered"
     telegram_alert(telegram_token, chat_id, message=kill_msg)
