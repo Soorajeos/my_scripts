@@ -35,7 +35,7 @@ try:
         'Content-Type': 'application/json',
     }
 
-    # using the max_fee obtained from the above response
+    # using the max_fee obtained from the above response. The doman , tpid and actor has to be edited.
     renewal_data = '{"fio_domain": "string", "max_fee":' + str(max_fee) + ', "tpid": "string", "actor": "string"}'
 
     response = requests.post(url=renewal_url, headers=renewal_headers, data=renewal_data)
