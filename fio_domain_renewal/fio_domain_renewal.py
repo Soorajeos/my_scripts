@@ -13,7 +13,7 @@ def telegram_alert(token, chatid, message):
 
 try:
     # The url of api server comes here
-    url = "https://testnet.fioprotocol.io/v1/chain"
+    url = "https://testnet.fioprotocol.io"
 
     # url of api server (endpoint : get_fee)
     fee_url = url + '/v1/chain/get_fee'
