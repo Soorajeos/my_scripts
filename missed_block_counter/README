@@ -1,4 +1,4 @@
-The main.py accepts the path of the log file as argument. The script will be updated in future so it can accept docker container id/name as argument and process.
+The main.py accepts the path of the log file as argument. The script will be updated in future so it can accept docker container id/name as argument and process the log.
 
 Example :
 
