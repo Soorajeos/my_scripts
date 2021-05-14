@@ -59,7 +59,7 @@ while True:
                     temp = i
 
                 elif i - temp > 1:
-                    msg = "The blocks has been missed between ", temp, "and ", i
+                    msg = "The blocks has been missed between ", temp, " and ", i
                     sub = "MISSED BLOCK"
                     telegram_alert(telegram_token, chat_id, msg)
                     send_email(sub, msg)
