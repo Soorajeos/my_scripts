@@ -66,4 +66,4 @@ while True:
                     temp = i
         except:
             pass
-        time.sleep(1)
+#        time.sleep(1)
