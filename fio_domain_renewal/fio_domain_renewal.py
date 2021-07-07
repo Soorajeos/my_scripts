@@ -23,7 +23,7 @@ try:
     }
 
     # the address has to be changed.
-    fee_data = '{"end_point":"renew_fio_domain","fio_address":"alice@purse"}'
+    fee_data = '{"end_point":"renew_fio_domain","fio_address":"<fio address>"}'
 
     fee_response = requests.post(url=fee_url, headers=fee_headers, data=fee_data)
     max_fee = fee_response.json()["fee"]
